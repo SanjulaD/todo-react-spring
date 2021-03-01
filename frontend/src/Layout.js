@@ -6,6 +6,7 @@ import TodoSection from './screens/TodoSection';
 import Header from './components/Header';
 import Login from './components/Login';
 import Logout from './components/Logout';
+import Update from './components/Update';
 
 const Layout = () => {
     return (
@@ -18,6 +19,7 @@ const Layout = () => {
                     <Route exact path="/todos" component={TodoSection}/>
                     <Route exact path="/login" component={Login}/>
                     <Route exact path="/logout" component={Logout}/>
+                    <Route exact path="/todos/:id" component={Update}/>
                     <Route component={Error}/>
                 </Switch>
             </Router>

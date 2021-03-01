@@ -15,6 +15,15 @@ class AuthenticationService {
             return true
         }
     }
+
+    getLoggerUserName() {
+        let user = sessionStorage.getItem('authenticatedUser')
+        if (user === null) {
+            return ''
+        } else {
+            return user
+        }
+    }
 }
 
 export default new AuthenticationService()

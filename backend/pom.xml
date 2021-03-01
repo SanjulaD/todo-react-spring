@@ -15,6 +15,7 @@
     <description>To Do application using react anf Sprin boot</description>
     <properties>
         <java.version>1.8</java.version>
+        <start-class>com.todo.rest.restfulwebservices.ToDoApplication</start-class>
     </properties>
     <dependencies>
         <dependency>
